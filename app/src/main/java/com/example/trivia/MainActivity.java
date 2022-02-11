@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         List<Question> questions = new Repository().getQuestions(new QuestionListAsyncResponse() {
             @Override
             public void processFinished(ArrayList<Question> questionArrayList) {
-                Log.d("Main", "onCreate: " + questionArrayList.get(10).getQuestion());
+                Log.d("Main", "onCreate: " + questionArrayList.get(10));
             }
         });
     }
